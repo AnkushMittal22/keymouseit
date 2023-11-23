@@ -1,0 +1,170 @@
+.quizContainer {
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: auto;
+    background: rgba(128, 128, 128, 0.33);
+    margin: 10% auto;
+    text-align: center;
+}
+
+#questionNumber {
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+
+.stars {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.question {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.options {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.option {
+  background-color: #ffd700;
+  padding: 10px;
+  margin: 5px;
+  width: 42%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option:hover {
+  background-color: #ffcc00;
+}
+
+.selected {
+  background-color: #ff6666 !important;
+  color: white;
+}
+
+.correct {
+  background-color: #4caf50 !important;
+  color: white;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+#progressMeterContainer {
+  margin-top: 20px;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#progressMeter {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
+}
+
+#percentageIndicator {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  display: flex ;
+  justify-content: space-between;
+}
+
+#nextBtn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+
+#progressMeterContainer {
+  margin-top: 20px;
+  height: 20px;
+  background-color: #e0e0e0;
+  border: 1px solid rgba(0, 0, 0, 0.733);
+  box-shadow: 8px 8px 8px #151722, -8px -8px 10px #25283b;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#progressMeter {
+  height: 100%;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+#progressMeter.black {
+  background: linear-gradient(to right, black 0%, black 75%, white 75%, white 100%);
+}
+
+#progressMeterContainer {
+  margin-top: 20px;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#progressMeter {
+  height: 100%;
+  position: relative;
+}
+
+.backgroundBlack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 75%;
+  background-color:gray;
+}
+
+.foregroundYellow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: yellow;
+  z-index: 1;
+}
+
+ 
+
+#overallProgressMeterContainer {
+    margin-top: 20px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border: 1px solid rgba(0, 0, 0, 0.733);
+    box-shadow: 8px 8px 8px #151722, -8px -8px 10px #25283b;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  #overallProgressMeter {
+    height: 100%;
+    background: white;
+    transition: width 0.3s ease;
+  }
